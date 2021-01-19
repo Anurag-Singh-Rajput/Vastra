@@ -1,0 +1,348 @@
+/* CSS Reset  */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Body  */
+
+body {
+    background-color: rgb(178, 206, 182);
+}
+
+/* Navigation Bar  */
+
+#navbar {
+    display: flex;
+    position: relative;
+    top: 0;
+    left: 0;
+    font-family: 'Bebas Neue', cursive;
+}
+
+#navbar::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/* Navigtion Bar : Logo and Image  */
+
+#logo {
+    margin: 8px 12px;
+}
+
+#logo img {
+    height: 50px;
+    width: 50px;
+    margin: -5px 5px;
+}
+
+/* Navigation Bar : List Styling */
+
+#navbar ul {
+    display: flex;
+    align-items: center;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.1rem;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: 9px 10px;
+    margin: 9px 20px;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    display: block;
+    text-decoration: none;
+    padding: 9px 10px;
+    margin: 9px 20px;
+    background-color: white;
+    border-radius: 30px;
+}
+
+/* Home Section  */
+
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2px 200px;
+    height: 530px;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url('../bg.jpg') no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+}
+
+#home p {
+    color: white;
+    font-size: 17px;
+    text-align: center;
+    padding: 7px;
+}
+
+/* Services Section  */
+
+#services {
+    position: relative;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#services-container .h-primary {
+    position: relative;
+    top: 36px;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#services .box {
+    width: 88%;
+    height: 640px;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+#services .box:hover {
+    width: 88%;
+    height: 640px;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+#services .box img {
+    top: 0;
+    left: 0;
+    border: 1px solid rgb(240, 231, 231);
+    border-radius: 50px;
+    width: 100%;
+    height: 100%;
+}
+
+#services .box .btn1 {
+    position: absolute;
+    font-family: 'Bebas Neue', cursive;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 32px;
+    padding: 7px 35px;
+    border: none;
+    cursor: pointer;
+    border-radius: 26px;
+}
+
+#services .box .btn1:hover {
+    animation-name: zoom;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+/* Partner Section  */
+
+#partner-container {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    height: 100px;
+    width: 100%;
+}
+
+#partners {
+    display: flex;
+}
+
+.partner {
+    display: flex;
+    height: 200px;
+    width: 100%;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.partner::before {
+    content: "";
+    background: url(../jeans-2979818_1920.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 250px;
+    width: 25%;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+.partner img {
+    height: 200px;
+    width: 200px;
+}
+
+/* Form Section  */
+
+#work-container {
+    display: inline-block;
+    height: 600px;
+    width: 700px;
+    margin: 30px auto;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+#work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#work-container {
+    margin: 50px auto;
+    background-color: rgb(134, 158, 138);
+}
+
+#work-container h1 {
+    padding: 10px;
+}
+
+.work-text {
+    margin: 2px 2px;
+}
+
+.work-text input {
+    border: 2px solid black;
+    background-color: blanchedalmond;
+    border-radius: 15px;
+    padding: 7px 41px;
+    margin: 4px 3px;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.work-text textarea {
+    border: 2px solid black;
+    background-color: blanchedalmond;
+    border-radius: 15px;
+    padding: 7px 41px;
+}
+
+#work .btn2 {
+    border: none;
+    background-color: #555;
+    color: white;
+    border-radius: 15px;
+    margin: 4px 2px;
+    padding: 9px 45px;
+    cursor: pointer;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+}
+
+#work .btn2:hover {
+    animation-name: zoom;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+/* footer section  */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(34, 33, 33);
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+footer p{
+    margin-right:10px ;
+    margin-left: 10px ;
+}
+
+/* Utility Classes */
+
+.h-primary {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 3.5rem;
+    padding: 40px;
+}
+
+.center {
+    text-align: center;
+}
+
+.btn {
+    border: 2px solid white;
+    background-color: rgb(242, 97, 117);
+    color: white;
+    font-size: 0.9rem;
+    padding: 8px 14px;
+    margin: 18px 4px;
+    border-radius: 17px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    border: 2px solid white;
+    background-color: rgb(221, 80, 99);
+    color: white;
+    font-size: 0.9rem;
+    padding: 8px 14px;
+    margin: 18px 4px;
+    border-radius: 17px;
+    cursor: pointer;
+    animation-name: zoom;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+/* Animation */
+
+@keyframes zoom {
+    0% {
+        background-color: #555;
+        color: white;
+    }
+    50% {
+        background-color: white;
+        color: #555
+    }
+    100% {
+        background-color: white;
+        color: #555
+    }
+}
