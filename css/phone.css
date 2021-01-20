@@ -15,11 +15,11 @@
 
 /* Home Section  */
 #home{
-    padding: 2px 63px;
+    padding: 2px 43px;
     height: 325px;
 }
 #home p {
-    font-size: 10px;
+    font-size: 20px;
 }
 .useless{
     display: none;
@@ -33,9 +33,13 @@
     height: auto;
     margin: 12px;
 }
+#services .box .btn1 {
+    font-size: 15px;
+    padding: 3px 17px;
+}
 #services-container .h-primary {
-    top: 65px;
-    margin: 48px;
+    top: 136px;
+    margin: 117px 2px;
 }
 /* Partner Section  */
 #partners{
@@ -74,6 +78,6 @@
 
 /* Utility Classes  */
 .h-primary{
-    font-size: 40px;
+    font-size: 30px;
     padding: 15px;
 }
