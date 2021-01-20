@@ -70,6 +70,10 @@
     border: 2px solid black;
     border-radius: 20px;
 }
+.work-text textarea {
+    padding: 7px 41px;
+    width: 180px;
+}
 #work .btn2{
     font-size: 15px;
     margin: 5px 0px;

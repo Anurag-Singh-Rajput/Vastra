@@ -139,13 +139,13 @@ body {
     margin: 20px;
 }
 
-#services .box:hover {
+/* #services .box:hover {
     width: 88%;
     height: 640px;
     display: flex;
     align-items: center;
     margin: 20px;
-}
+} */
 
 #services .box img {
     top: 0;
