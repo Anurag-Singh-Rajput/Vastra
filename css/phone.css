@@ -21,9 +21,7 @@
 #home p {
     font-size: 20px;
 }
-.useless{
-    display: none;
-}
+
 /* Services Section  */
 #services .box img{
     height: 67%;
@@ -46,9 +44,8 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .partner {
-    /* flex-wrap: wrap; */
-    /* height: 200px; */
     width: 110px;
     padding: 2px 40px;
     margin: 2px 2px;

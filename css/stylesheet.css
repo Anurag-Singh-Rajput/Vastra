@@ -11,7 +11,7 @@ html{
 /* Body  */
 
 body {
-    background-color: rgb(178, 206, 182);
+    background-color: rgb(138, 138, 138);
 }
 
 /* Navigation Bar  */
@@ -120,6 +120,9 @@ body {
     align-items: center;
     justify-content: center;
 }
+#services-container{
+    background-color: rgb(138, 138, 138);
+}
 
 #services-container .h-primary {
     position: relative;
@@ -139,18 +142,10 @@ body {
     margin: 20px;
 }
 
-/* #services .box:hover {
-    width: 88%;
-    height: 640px;
-    display: flex;
-    align-items: center;
-    margin: 20px;
-} */
-
 #services .box img {
     top: 0;
     left: 0;
-    border: 1px solid rgb(240, 231, 231);
+    border:none;
     border-radius: 50px;
     width: 100%;
     height: 100%;
@@ -184,7 +179,9 @@ body {
     position: relative;
     flex-direction: column;
     height: 100px;
-    /* width: 100%; */
+}
+#partner-container h1 {
+    background-color: rgb(116, 113, 113);
 }
 
 #partners {
@@ -193,22 +190,11 @@ body {
 
 .partner {
     display: flex;
-    /* height: 200px; */
     width: 100%;
     margin: 10px 5px;
     align-items: center;
     justify-content: center;
 }
-
-/* .partner::before {
-    content: "";
-    background: url(../jeans-2979818_1920.jpg) no-repeat center center/cover;
-    position: absolute;
-    height: 250px;
-    width: 50%;
-    z-index: -1;
-    opacity: 0.2;
-} */
 
 .partner img {
     height: 200px;
