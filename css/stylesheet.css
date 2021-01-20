@@ -3,18 +3,27 @@
 * {
     padding: 0;
     margin: 0;
+    outline: none;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
 
 /* Body  */
 
 body {
-    background-color: rgb(138, 138, 138);
+    background-color: white;
 }
 
 /* Navigation Bar  */
+
+.right {
+    display: inline-block;
+    position: absolute;
+    top: -3px;
+    right: 19px;
+}
 
 #navbar {
     display: flex;
@@ -84,7 +93,7 @@ body {
     justify-content: center;
     flex-direction: column;
     padding: 2px 200px;
-    height: 530px;
+    height: 469px;
     font-family: 'Fjalla One', sans-serif;
 }
 
@@ -113,20 +122,20 @@ body {
 /* Services Section  */
 
 #services {
-    position: relative;
+    /* position: relative;
     margin: 20px;
     display: flex;
+    flex-direction: row;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-}
-#services-container{
-    background-color: rgb(138, 138, 138);
+    justify-content: center; */
+    display: flex;
 }
 
 #services-container .h-primary {
     position: relative;
     top: 36px;
+    /* color:rgb(226, 75, 95); */
     margin: 30px;
     display: flex;
     flex-direction: column;
@@ -135,24 +144,26 @@ body {
 }
 
 #services .box {
-    width: 88%;
-    height: 640px;
-    display: flex;
+    width: 30%;
+    height: 30%;
+    display: block;
+    margin: auto;
+    /* display: flex;
     align-items: center;
-    margin: 20px;
+    margin: 20px; */
 }
 
 #services .box img {
     top: 0;
     left: 0;
-    border:none;
-    border-radius: 50px;
+    border: none;
+    border-radius: 150px;
     width: 100%;
     height: 100%;
 }
 
 #services .box .btn1 {
-    position: absolute;
+    position: relative;
     font-family: 'Bebas Neue', cursive;
     top: 50%;
     left: 50%;
@@ -180,9 +191,6 @@ body {
     flex-direction: column;
     height: 100px;
 }
-.a {
-    background-color: rgb(116, 113, 113);
-}
 
 #partners {
     display: flex;
@@ -207,22 +215,19 @@ body {
     display: inline-block;
     height: 600px;
     width: 700px;
-    margin: 30px auto;
+    margin: 50px auto;
+    background-color: rgb(242, 243, 242);
     align-items: center;
     justify-content: center;
-    border: 2px solid black;
-    border-radius: 20px;
+    border-top: 8px solid black;
+    border-bottom: 8px solid black;
+    border-radius: 40px;
 }
 
 #work {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-#work-container {
-    margin: 50px auto;
-    background-color: rgb(134, 158, 138);
 }
 
 #work-container h1 {
@@ -234,8 +239,9 @@ body {
 }
 
 .work-text input {
-    border: 2px solid black;
-    background-color: blanchedalmond;
+    border: none;
+    background-color: rgb(56, 56, 56);
+    color: white;
     border-radius: 15px;
     padding: 7px 41px;
     margin: 4px 3px;
@@ -243,8 +249,8 @@ body {
 }
 
 .work-text textarea {
-    border: 2px solid black;
-    background-color: blanchedalmond;
+    border: none;
+    background-color: rgb(56, 56, 56);
     border-radius: 15px;
     padding: 7px 41px;
 }
@@ -271,15 +277,17 @@ body {
 
 footer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    border-top: 5px solid black;
     justify-content: center;
+    align-items: center;
     background-color: rgb(34, 33, 33);
     color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-footer p{
-    margin-right:10px ;
-    margin-left: 10px ;
+
+footer p {
+    margin: 18px 39px;
+    font-family: 'Fjalla One', sans-serif;
 }
 
 /* Utility Classes */
@@ -311,6 +319,54 @@ footer p{
     animation-fill-mode: forwards;
 }
 
+.but {
+    border: 2px solid white;
+    background: none;
+    color: white;
+    font-size: 0.9rem;
+    padding: 8px 14px;
+    margin: 18px 4px;
+    border-radius: 17px;
+    cursor: pointer;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.but:hover {
+    background-color: white;
+    color: black;
+}
+
+.butt {
+    border: none;
+    padding: 5px 20px;
+    background-color: rgb(34, 33, 33);
+    cursor: pointer;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+}
+
+.butt a {
+    text-decoration: none;
+    color: white;
+}
+
+.fb:hover {
+
+    animation-name: facebook;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+.insta:hover{
+    animation-name: instagram;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+.git:hover{
+    animation-name: github;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
 /* Animation */
 
 @keyframes zoom {
@@ -325,5 +381,47 @@ footer p{
     100% {
         background-color: white;
         color: #555
+    }
+}
+@keyframes facebook {
+    0% {
+        background-color: rgb(34, 33, 33);
+        color: white;
+    }
+    50% {
+        background-color: blue;
+        color: white;
+    }
+    100% {
+        background-color: blue;
+        color: white;
+    }
+}
+@keyframes instagram {
+    0% {
+        background-color: rgb(34, 33, 33);
+        color: white;
+    }
+    50% {
+        background-color: rgb(255, 145, 0);
+        color: white;
+    }
+    100% {
+        background-color: rgb(255, 145, 0);
+        color: white;
+    }
+}
+@keyframes github{
+    0% {
+        background-color: rgb(34, 33, 33);
+        color: white;
+    }
+    50% {
+        background-color: purple;
+        color: white;
+    }
+    100% {
+        background-color: purple;
+        color: white;
     }
 }

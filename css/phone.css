@@ -1,5 +1,8 @@
 
 /* Navbar Section  */
+.right {
+    display: none
+}
 #navbar{
     flex-direction: column;
     align-items: center;
@@ -12,11 +15,15 @@
     height: 40px;
     width: 40px;
 }
+#navbar ul li a {
+    padding: 3px 4px;
+    margin: 9px 20px;
+}
 
 /* Home Section  */
 #home{
     padding: 2px 43px;
-    height: 325px;
+    height: 490px;
 }
 #home p {
     font-size: 20px;
@@ -25,21 +32,13 @@
     display: none;
 }
 /* Services Section  */
-#services .box img{
-    height: 67%;
-}
-#services .box {
-    width: 77%;
-    height: auto;
-    margin: 12px;
-}
 #services .box .btn1 {
-    font-size: 15px;
+    font-size: 10px;
     padding: 3px 17px;
 }
 #services-container .h-primary {
-    top: 30px;
-    margin:40px 2px;
+    top: 84px;
+    margin:80px 2px;
 }
 /* Partner Section  */
 #partners{
@@ -66,8 +65,7 @@
     margin: 30px 40px;
     align-items: center;
     justify-content: center;
-    border: 2px solid black;
-    border-radius: 20px;
+  
 }
 .work-text textarea {
     padding: 7px 41px;
