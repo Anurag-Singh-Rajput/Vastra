@@ -180,7 +180,7 @@ body {
     flex-direction: column;
     height: 100px;
 }
-#partner-container h1 {
+.a {
     background-color: rgb(116, 113, 113);
 }
 

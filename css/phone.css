@@ -21,7 +21,9 @@
 #home p {
     font-size: 20px;
 }
-
+.useless{
+    display: none;
+}
 /* Services Section  */
 #services .box img{
     height: 67%;
@@ -36,8 +38,8 @@
     padding: 3px 17px;
 }
 #services-container .h-primary {
-    top: 136px;
-    margin: 117px 2px;
+    top: 30px;
+    margin:40px 2px;
 }
 /* Partner Section  */
 #partners{
