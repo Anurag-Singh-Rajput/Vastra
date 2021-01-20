@@ -1,0 +1,79 @@
+
+/* Navbar Section  */
+#navbar{
+    flex-direction: column;
+    align-items: center;
+}
+#navbar ul li {
+    font-size: 1rem;
+}
+#logo img {
+    margin: 2px 2px;
+    height: 40px;
+    width: 40px;
+}
+
+/* Home Section  */
+#home{
+    padding: 2px 63px;
+    height: 325px;
+}
+#home p {
+    font-size: 10px;
+}
+.useless{
+    display: none;
+}
+/* Services Section  */
+#services .box img{
+    height: 67%;
+}
+#services .box {
+    width: 77%;
+    height: auto;
+    margin: 12px;
+}
+#services-container .h-primary {
+    top: 65px;
+    margin: 48px;
+}
+/* Partner Section  */
+#partners{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.partner {
+    /* flex-wrap: wrap; */
+    /* height: 200px; */
+    width: 110px;
+    padding: 2px 40px;
+    margin: 2px 2px;
+    align-items: center;
+}
+.partner img {
+    height: 100px;
+    padding: 2px 2px;
+    width: auto;
+}
+/* Work Section  */
+#work-container {
+    display: inline-block;
+    height: auto;
+    width: auto;
+    margin: 30px 40px;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+#work .btn2{
+    font-size: 15px;
+    margin: 5px 0px;
+    padding: 8px 39px;
+}
+
+/* Utility Classes  */
+.h-primary{
+    font-size: 40px;
+    padding: 15px;
+}
